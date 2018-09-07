@@ -11,8 +11,8 @@ public class Lexer
 {
 
     protected int position;
-    protected char currentCh;       // очередной считанный символ
-    protected int currentCharValue; // целое значение очередного считанного символа
+    protected char currentCh;       // РѕС‡РµСЂРµРґРЅРѕР№ СЃС‡РёС‚Р°РЅРЅС‹Р№ СЃРёРјРІРѕР»
+    protected int currentCharValue; // С†РµР»РѕРµ Р·РЅР°С‡РµРЅРёРµ РѕС‡РµСЂРµРґРЅРѕРіРѕ СЃС‡РёС‚Р°РЅРЅРѕРіРѕ СЃРёРјРІРѕР»Р°
     protected System.IO.StringReader inputReader;
     protected string inputString;
 
@@ -78,7 +78,7 @@ public class IntLexer : Lexer
         }
 
 
-        if (currentCharValue != -1) // StringReader вернет -1 в конце строки
+        if (currentCharValue != -1) // StringReader РІРµСЂРЅРµС‚ -1 РІ РєРѕРЅС†Рµ СЃС‚СЂРѕРєРё
         {
             Error();
         }
